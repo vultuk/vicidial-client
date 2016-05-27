@@ -1,1 +1,19 @@
-Hello!
+<!DOCTYPE html>
+<html lang="en" ng-app="VicidialClient">
+  <head>
+    <title>Vicidial Client</title>
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="sidebar" class="col-sm-3 col-md-2" ng-include="'./partials/admin/menu.html'"></div>
+        <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2" ui-view></div>
+      </div>
+    </div>
+
+    <script src="./assets/js/app.min.js"></script>
+  </body>
+</html>

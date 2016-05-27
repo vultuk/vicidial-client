@@ -4,6 +4,8 @@
   "description": "A new client for Vicidial",
   "main": "main.js",
   "scripts": {
+    "start:grunt": "./node_modules/grunt/bin/grunt",
+    "grunt-watch": "./node_modules/grunt/bin/grunt watch",
     "start": "electron electron.js"
   },
   "repository": {
@@ -23,6 +25,15 @@
   },
   "homepage": "https://github.com/vultuk/vicidial-client#readme",
   "devDependencies": {
-    "electron-prebuilt": "^1.2.0"
+    "angular": "^1.5.5",
+    "bootstrap-sass": "^3.3.6",
+    "connect": "^3.4.1",
+    "electron-prebuilt": "^1.2.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "serve-static": "^1.10.2"
   }
 }
