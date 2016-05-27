@@ -1,0 +1,28 @@
+{
+  "name": "vicidial-client",
+  "version": "0.0.1",
+  "description": "A new client for Vicidial",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron electron.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vultuk/vicidial-client"
+  },
+  "keywords": [
+    "Vicidial",
+    "dialler",
+    "client",
+    "goautodial"
+  ],
+  "author": "Vultuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vultuk/vicidial-client/issues"
+  },
+  "homepage": "https://github.com/vultuk/vicidial-client#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}
