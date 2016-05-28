@@ -347,4 +347,9 @@ VicidialClient.config(['$stateProvider', '$urlRouterProvider', function($statePr
         title: 'User List',
         templateUrl : './partials/admin/users/list.html'
     })
+    .state('users.add', {
+        url: '/add',
+        title: 'Add User',
+        templateUrl : './partials/admin/users/add.html'
+    })
 }]);

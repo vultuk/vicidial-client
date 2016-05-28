@@ -1,9 +1,43 @@
+<div class="page-heading">
+  <div class="page-options">
+    <a ui-sref="users.add" class="btn btn-default"><span>+</span></a>
+  </div>
+  <h3 class="page-title">
+    Show Users
+    <aside>101 Active Users | 13 Inactive Users</aside>
+  </h3>
+</div>
+
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">User List</h3>
   </div>
 
-  <div class="panel-body">
-    Here is a list of users
-  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Full Name</th>
+        <th>Level</th>
+        <th>Group</th>
+        <th>Active</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Joe Blogs</td>
+        <td>8</td>
+        <td>Admin</td>
+        <td>Yes</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6" class="text-center">Pagination Goes Here</td>
+      </tr>
+    </tfoot>
+  </table>
 </div>
