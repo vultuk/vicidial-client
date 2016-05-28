@@ -31,9 +31,11 @@
     "electron-prebuilt": "^1.2.0",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.0",
+    "jquery": "^2.2.4",
     "serve-static": "^1.10.2"
   }
 }

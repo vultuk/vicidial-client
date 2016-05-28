@@ -4,10 +4,24 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
+.no-padding {
+  margin: -20px -20px 0px -20px !important;
+}
+@media (min-width: 768px) {
+  .no-padding {
+    margin: -20px -40px 0px -40px !important;
+  }
+}
+
+.table-valign-middle {
+   vertical-align: middle !important;
+}
+
 .page-heading {
+  background-color: #EFEFEF;
   border-bottom: 1px solid #DDD;
-  margin: 0px 0px 20px 0px;
-  padding: 0px 0px 5px 0px;
+  margin-bottom: 20px !important;
+  padding: 10px 10px 5px 10px;
   min-height: 52px;
 
   h3 {
