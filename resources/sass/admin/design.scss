@@ -1,3 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.no-padding {
+  margin: -20px -20px 0px -20px !important;
+}
+@media (min-width: 768px) {
+  .no-padding {
+    margin: -20px -40px 0px -40px !important;
+  }
+}
+
+.table-valign-middle {
+   vertical-align: middle !important;
+}
+
+.page-heading {
+  background-color: #EFEFEF;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 20px !important;
+  padding: 10px 10px 5px 10px;
+  min-height: 52px;
+
+  h3 {
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+    font-weight: 700;
+    aside {
+      padding: 4px 0px 0px 0px;
+      margin: 0px;
+      font-size: 10px;
+      line-height: 12px;
+      color: #999;
+    }
+  }
+
+  .page-options {
+    float: right;
+    text-align: right;
+  }
+}
+
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;

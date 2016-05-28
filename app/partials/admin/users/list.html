@@ -1,9 +1,58 @@
+<div class="page-heading no-padding">
+  <div class="page-options">
+    <a ui-sref="users.add" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-plus"></span></a>
+  </div>
+  <h3 class="page-title">
+    Show Users
+    <aside>101 Active Users | 13 Inactive Users</aside>
+  </h3>
+</div>
+
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">User List</h3>
   </div>
 
-  <div class="panel-body">
-    Here is a list of users
-  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">ID</th>
+        <th>Full Name</th>
+        <th class="text-center">Level</th>
+        <th>Group</th>
+        <th class="text-center">Active</th>
+        <th width="150">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users.data">
+        <td class="text-center table-valign-middle">{{ user.userId }}</td>
+        <td class="table-valign-middle">{{ user.fullName }}</td>
+        <td class="text-center table-valign-middle">{{ user.userLevel }}</td>
+        <td class="table-valign-middle">{{ user.userGroup }}</td>
+        <td class="text-center table-valign-middle"><i ng-class="{'glyphicon glyphicon-ok': user.active, 'glyphicon glyphicon-remove': !user.active}"></i></td>
+        <td class="text-right">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Stats</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Timeclock</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Disable User</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6" class="text-center">Pagination Goes Here</td>
+      </tr>
+    </tfoot>
+  </table>
 </div>
